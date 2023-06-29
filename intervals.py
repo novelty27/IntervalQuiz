@@ -95,7 +95,11 @@ def main(stdscr, root):
 		stdscr.addstr(start_y+1, start_x+0, f" {name.ljust(3)}  {first.ljust(4)} {second.ljust(4)}")
 		k = stdscr.getch()
 	
-		#Display test's answer
+		#Display first test's answer
+		stdscr.addstr(start_y+2, start_x+0, f"      {notes[first].ljust(3)}")
+		k = stdscr.getch()
+
+		#Display second test's answer
 		stdscr.addstr(start_y+2, start_x+0, f"      {notes[first].ljust(3)}  {notes[second].ljust(3)}")
 		
 		k = stdscr.getch()
